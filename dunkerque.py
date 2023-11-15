@@ -32,8 +32,7 @@ def create_graph_weather():
                                         waves=data_weather['waves']))
     
     # Créer le graphique
-    p = figure(height=500,width=800,
-               title="Vitesse du Vent et Hauteur des Vagues au fil du temps",x_axis_type="datetime")
+    p = figure(height=500,width=700, x_axis_type="datetime")
     p.xaxis.major_label_orientation = "horizontal"
     
     # Ajout outil Hover
@@ -491,18 +490,3 @@ def combined_page():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5050)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
