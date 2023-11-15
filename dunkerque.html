@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux migratoires Dunkerque</title>
+    {{ js_resources|safe }}
+    {{ css_resources|safe }}
+    {{ p_script|safe }}
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #graph-container {
+            flex: 0.2;  /* Adjust the width of the graph container */
+            margin: 10px;
+        }
+
+        #maps-container {
+            flex: 1;
+            margin: 10px;
+        }
+
+        #maps-container div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="graph-container">
+        <h1>Cartographie des flux migratoires à Dunkerque</h1>
+        <div>
+            {{ p_div|safe }}
+        </div>
+    </div>
+    
+    <div id="maps-container">
+        <div>
+            {{ m_html|safe }}
+        </div>
+        <div>
+            {{ m2_html|safe }}
+        </div>
+    </div>
+</body>
+</html>
