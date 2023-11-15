@@ -27,21 +27,30 @@
         #maps-container div {
             margin-bottom: 20px;
         }
+
+        .map-title, .graph-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div id="graph-container">
         <h1>Cartographie des flux migratoires à Dunkerque</h1>
         <div>
+            <h2 class="graph-title">Graphique des conditions météo au mois d'août à Dunkerque en 2022</h2>
             {{ p_div|safe }}
         </div>
     </div>
     
     <div id="maps-container">
         <div>
+            <h2 class="map-title">Carte du littoral</h2>
             {{ m_html|safe }}
         </div>
         <div>
+            <h2 class="map-title">Carte du camp</h2>
             {{ m2_html|safe }}
         </div>
     </div>
